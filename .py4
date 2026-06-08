@@ -1,0 +1,75 @@
+# DICTIONARY
+""" d = {"age":20,"name":"hello"}
+d.update({"name":"arya mains"})
+d['name'] = "arya mains new"
+print(d['age'])
+l = [20,10]
+print(l[0])
+# nested dictionary
+d = {"address":{"address1":{"city":"kukas city","district":"jaipur"},
+                "address2":{"city":"gopalpura","district":"arya mains"}}}
+print(d['address']['address1']['city'])
+print(d['address']['address1']['district'])
+print(d['address']['address2']['city'])
+print(d['address']['address1']['district']) """
+# NESTED LIST
+""" l = [10,20,30,["hello","hello1","hello2",[True,False]]]
+print(l)
+#slicing 
+l1 = l[:2] 
+print(l1)
+#Example
+print(l[2:])
+#
+l3= l[3][:2]
+print(l3)
+#
+l4 = l[-1:-3]
+print(l4)
+# MAP (minimum 2 arguements required ) """
+
+""" def square(x):
+    return x*x """
+l = [10,20,30]
+""" l1 = list(map(lambda x:x*x,l)) """
+"""print(l1) """
+l1 = []
+""" for i in range(len(l)):
+    l1.append(l[i] * l[1])
+    print(l1)
+    
+    def hello(x):
+        return x.endswith('a')
+#filter
+l = ["apple","banana","cat","dog"]
+l1 = list(filter(hello,l))
+print(l1) """
+
+# try except
+try:
+    num1 = 10
+    num2 = 0
+    print(num1/num2)
+except:
+    print("hello except")
+    #
+    try:
+        num1 = 10
+        num2 = 5
+        print(num1/num2)
+    except:
+        print("hello except")
+        #
+        try :
+            num1 = 10
+            num2 = 5
+            print(num1/num2)
+        except:
+            print("hello except")
+            
+            
+            
+                  
+            
+    
+ 

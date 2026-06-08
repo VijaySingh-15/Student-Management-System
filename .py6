@@ -1,0 +1,67 @@
+# OOPS
+
+"""     def __init__ (self,name):
+     self.name = name
+    
+    def show(self):
+        print(self.name)
+      
+    v = vijay("hello")
+    v.show() """
+   
+                
+# example
+"""ss vijay:
+    def init (self,name,age):
+        self.name = name
+        self.age = age
+        def getAge(self):
+            print("My age is :",self.age)
+            def getName(self):
+                print("My name is ",self.Name)
+                v = vijay(age = 19,name= "hello")
+                v.getAge()
+                v.getName() """
+# example 2 
+""" class student:
+    def __init__ (self,*args):
+        print(type(args))
+        print(args)
+        self.name = args[0]
+        
+    def getstu(self):
+        return self.name
+        
+s = student({"hello",20,"0000000","arya@"})
+t = s.getstu()
+print(t) 
+ """
+class student:
+    def __init__(self,args):
+        print(type(args))
+        print(args)
+        self.name = args
+        
+    def getstu(self):
+        return self.name
+    
+s = student({"name":"hello","age":20})
+t = s.getstu()
+print(t["age"])
+# example 4
+class student:
+    def __init__(self,*args):
+        self.data = args
+        
+    def users(self):
+        for i in self.data[0]:
+            print(i)
+    def details(self):
+        print(self.data[1])
+        for i in self.data[1]:
+            print()
+        
+        
+s = student(["vijay","shreya","tanmay"],{"address":"kukas","college":"arya","location":"jaipur"})
+s.details()
+s.users()

@@ -1,0 +1,135 @@
+""" class Address :
+    #city = "jaipur"
+   # state = "rajasthan"
+   def __init__(self,city,state):
+       self.city = city
+       self.state = state 
+a = Address("jaipur","rajasthan")
+print(a.city)
+print(a.state)
+
+# class method and self  
+class Address:
+  def __init__(self,city,state):
+    self.city = city
+    self.state = state
+  
+  def location(self):
+    return f"my location is {self.city} in {self.state}"
+ 
+class User(Address):
+  def __init__(self,name,age,city,state):
+    self.name = name
+    self.age = age
+    self.city = city
+    self.state = state
+ 
+  def userName(self):
+    print(f"my name is {self.name}")
+ 
+  def userDetails(self):
+    print(f"my name is {self.name} and my location is {self.city} in {self.state}")
+ 
+u = User("vijay",20,"kukas","rajasthan")
+u.userDetails()
+u.location()
+# ENCAPSULATION
+class Address:
+    def __init__ (self,city,state):
+     self.city = city
+     self.state = state
+    
+    def location(self):
+        print(f"my location is {self.city} in {self.state}")
+    def getcity(self):
+        return self._city    
+a = Address("jaipur","rajasthan")
+a.location()
+print(a.state) """
+
+# Polymorphism
+""" class Address: """
+"""     def __init__(self,city,state):
+     self.city = city
+     self.state = state
+     def location(self):
+         print(f"my address location is {self.city} in {self.state}")
+         
+         class Hometown:
+             def __init__ (self,city,state):
+                 self.city = city
+                 self.state = state
+             def location(self): 
+                print(f"my hometown location is {self.ciyt} in {self.state}")    
+a = Address("vadodara","gujarat")
+a.location()
+b = Hometown("jaipur","rajasthan")
+b.location() """
+class Address:
+  def __init__(self,city,state):
+    self.city = city
+    self.state = state
+  def location(self):
+    print(f"my address location is {self.city} in {self.state}")
+ 
+class HomeTown:
+  def __init__(self,city,state):
+    self.city = city
+    self.state = state
+ 
+  def location(self):
+    print(f"my home town location is {self.city} in {self.state}")
+  
+a = Address("vadodara","gujrat")
+a.location()
+b = HomeTown("chappra","bihar")
+b.location()
+    #
+class Withdraw:
+  total = 0 # class variable
+  def __init__(self,city,state):
+    self.city = city
+    self.state = state
+    Withdraw.total += 1
+ 
+  def location(self):
+    print("location")
+ 
+a = Withdraw("jaipur","rajasthan")
+ 
+b = Withdraw("bhilwara","rajasthan")
+ 
+a.total
+# over riding
+class Address:
+    def __init__(self,city,state):
+       self.city = city
+       self.state = state
+    def location(self):
+       print("address location")
+class User(Address):
+    def __init__(self,name,age,city,state):
+        super().__init__(city,state)
+        self.name = name
+        self.age = age
+    def location(self):
+     print("users locations") 
+u = User("arya mains",20,"kukas","rajasthan")
+u.location()
+# tuple
+t =(10,20,30)
+print(t[-1])
+# example
+marks = [98,97,96]
+""" marks[2] = 50
+print(type(marks))
+print(marks) """ 
+t = tuple(marks)
+print(type(t))
+print(t) 
+m =list(t)
+print(type(m))
+print(m)
+
+
+    

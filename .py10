@@ -1,0 +1,81 @@
+
+""" # reshape array 2d
+import numpy as np
+arr = np.arange(12)
+uparr = np.reshape(arr,(4,3))
+print(uparr)
+# 3d
+import numpy as np
+arr1 = np.arange(24)
+uparr1 = np.reshape(arr1,(2,4,3))
+print(uparr1)"""
+# flatten 2d --> create copy then works 
+""" import numpy as np
+arr = np.arange(12).reshape(3,4)
+print(arr)
+up_arr = arr.flatten()
+print(up_arr) 
+# 3d
+import numpy as np
+arr1 = np.arange(16).reshape(2,4,2)
+print(arr1)
+up_arr1 = arr1.flatten
+print(up_arr1)"""
+# ravel --> works om original array 
+# example 2d
+""" import numpy as np
+arr = np.arange(14).reshape(7,2)
+print(arr)
+up_arr = arr.ravel()
+print(up_arr)
+# example 3d
+arr1 = np.arange(16).reshape(2,2,4)
+print(arr1)
+up_arr1 = arr1.ravel()
+print(up_arr1)
+# transpose 
+import numpy as np
+arr2 = np.arange(12).reshape(3,4)
+print(arr2)
+up_arr2 = arr2.T
+print(up_arr2) """
+# slicing
+# 1d
+""" import numpy as np
+arr3 = np.arange(11)
+print(arr3)
+up_arr3 = arr3[:3]
+print(up_arr3)
+# 2d 
+arr4 = np.arange(16).reshape(8,2)
+print(arr4)
+up_arr4 = arr4[-1,-1]
+print(up_arr4)
+# 3d
+import numpy as np
+arr=np.arange(24).reshape(2,3,4)
+print(arr)
+up_arr = arr[0,0,0]
+print(up_arr)
+up_arr = arr[1,2,3]
+print(up_arr)
+ """
+# while loop
+""" import numpy as np
+arr = np.arange(12)
+i = 0
+while i < len(arr):
+    print(arr[i], end = "")
+    i += 1 """
+    # while loop for
+import numpy as np
+arr1 = np.arange(12).reshape(3,4)
+i = 0
+len_i = len(arr1)
+len_j = len(arr1)
+while i < len_i:
+    j = 0
+    while j < len_j:
+        print(arr1[i][j], end=" ")
+        j += 1
+        i += 1     

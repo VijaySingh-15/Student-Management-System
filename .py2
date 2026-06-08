@@ -1,0 +1,109 @@
+
+# Bitwise Operator
+# >> , << , & , ^ ,
+""" a = 5
+b = 2
+print(a & b)
+print(a >> b)
+print(a << b)
+print(a ^ b)
+
+# identity operator 
+# is | is not 
+name = 10
+name1 = 10 
+print(name == name1)  # value 
+
+print(name is name1) # value | address
+print(id(name))
+print(id(name1)) """
+# example 2
+""" num1 = -6
+num2 = -6
+print(num1 == num2)
+print(num1 is num2)
+print(id(num1))
+print(id(num2))
+# example ( -5 to 256) -> both variable point on same address 
+num3 = 10
+num4 = 10.0
+print(num3 == num4)
+print(num3 is num4)
+print(id(num3))
+print(id(num4)) """
+
+#CONDITIONAL STATEMENT 
+# if ,else , elif 
+""" num1 = 10
+num2 = 20
+if num1 < num2 :
+    print(num2)
+# if else
+num1 = int(input(" enter the number"))
+if num1 :
+    print("number :",num1)
+else:
+    print("zero", num1)
+    
+# if elif else 
+age = int(input("Enter the number:"))
+if age == 18:
+    print("your age is :",age)
+elif age > 18:
+    print("your are above then:",age)
+else:
+    print("you are less than:",age) """
+    # example
+
+marks = int(input("Enter the marks"))
+if marks < 60:
+    print("fail")
+elif marks <= 75:
+    print("Grade C")
+elif marks <=90:
+    print("Grade b")
+else: 
+    print("grade a")
+
+# Loops 
+# for 
+""" for i in range(5):
+    print("i =", i)
+    # list
+    l = [11,12,13,14]
+    print(len(l))
+    for i in range(4):
+        print(l[i])
+# while
+num1 = int(input("Enter the number:"))
+i = 0
+while i < num1:
+    print(i)
+    i += 1
+    #list
+    l = [10,11,12,13,14,15]
+    i = 0
+    while i < len(l):
+        print(l[i])
+        i += 1 """
+# example 
+""" d ={"name":"hello","age":20,"phone":"0000000"}
+print(d.keys())
+#  """
+""" L = [10,[11,12,13,14]]
+for i in range(2,len(L[1])):
+    print(L[1][i]) """
+    # break
+""" for i in range(5):
+        if i == 2:
+            break 
+        print(i)
+        # continue 
+        i == 0
+        while True:
+            if i == 5:
+                break
+            else:
+                i += 1
+                continue """
+    

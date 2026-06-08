@@ -1,0 +1,10 @@
+# pandas
+import pandas as pd
+# dict
+dict = {"name":["vijay","kunal","shreya","tanamy"],
+        "age":[20,20,20,21,],
+        "salary":[15000,18000,20000,18000]}
+df = pd.DataFrame(dict)
+print(df)
+# 
+import pandas as pd
